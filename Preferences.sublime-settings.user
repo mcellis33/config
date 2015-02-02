@@ -1,0 +1,10 @@
+{
+	"CscopeSublime_executable": "/usr/local/bin/cscope",
+	"font_face": "Inconsolata",
+	"font_size": 12.0,
+	"gopath": "/Users/pyrome/ig/mesa/go",
+	"ignored_packages":
+	[
+	],
+	"vintage_start_in_command_mode": true
+}
