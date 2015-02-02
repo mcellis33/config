@@ -50,3 +50,7 @@ defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool NO
 
 # Install Golang ctags rules.
 # cp .ctags $HOME/
+
+# Install a command line utility for moving files to the Trash folder.
+brew install trash
+
