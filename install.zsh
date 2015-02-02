@@ -27,6 +27,10 @@ cp .env $HOME/
 cp .aliases $HOME/
 cp .zshrc $HOME/
 
+# Install auxiliary scripts.
+cp lgs.zsh $HOME/
+cp plgs.zsh $HOME/
+
 # Install bash configuration.
 cp .bash_profile $HOME/
 
