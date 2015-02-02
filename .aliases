@@ -1,9 +1,20 @@
 alias lp="open /Applications/LightPaper.app"
 
 # re-build
-alias reb="make wipe clean && make"
+reb() {
+	make wipe;
+	make clean;
+	make;
+	terminal-notifier -message "reb done";
+}
+
 # re-topo12
-alias ret="make wipe && make && make topo12"
+ret() {
+	make wipe;
+	make;
+	make topo12;
+	terminal-notifier -message "ret done";
+}
 
 alias lgs="$HOME/lgs.zsh"
 alias plgs="$HOME/plgs.zsh"
