@@ -1,13 +1,13 @@
 [filter "media"]
+	required = true
 	clean = git media clean %f
 	smudge = git media smudge %f
-	required = true
 [user]
 	name = Mark Ellis
 	email = markellis@igneoussystems.com
 [alias]
     updatefork = !git checkout master && git pull upstream master && git push origin master
-    fixup = !git commit -a --fixup HEAD && GIT_EDITOR=: git rebase -i --autosquash HEAD~2
+    fixup = !git commit -a --amend --no-edit
     st = status --short --branch
     b = branch
     co = checkout
@@ -18,7 +18,7 @@
     lg = log --graph --pretty=tformat:'%Creset%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 [core]
 	excludesfile = /Users/pyrome/.gitignore_global
-	editor = vim
+	editor = sub -n -w
     preloadindex = true
 [merge]
     tool = extMerge
@@ -31,4 +31,4 @@
 [push]
     default = current
 [rerere]
-        enabled = true
+	enabled = false
