@@ -1,0 +1,6 @@
+alias lp="open /Applications/LightPaper.app"
+
+# re-build
+alias reb="make wipe clean && make"
+# re-topo12
+alias ret="make wipe && make && make topo12"

@@ -23,6 +23,8 @@ curl http://levien.com/type/myfonts/Inconsolata.otf > $HOME/Library/Fonts/Incons
 git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
 
 # Install zsh configuration.
+cp .env $HOME/
+cp .aliases $HOME/
 cp .zshrc $HOME/
 
 # Install bash configuration.
