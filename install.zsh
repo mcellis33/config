@@ -23,24 +23,24 @@ curl http://levien.com/type/myfonts/Inconsolata.otf > $HOME/Library/Fonts/Incons
 git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
 
 # Install zsh configuration.
-cp .env $HOME/
-cp .aliases $HOME/
-cp .zshrc $HOME/
+cp .env $HOME
+cp .aliases $HOME
+cp .zshrc $HOME
 
 # Install auxiliary scripts.
-cp lgs.zsh $HOME/
-cp plgs.zsh $HOME/
+cp lgs.zsh $HOME
+cp plgs.zsh $HOME
 
 # Install bash configuration.
-cp .bash_profile $HOME/
+cp .bash_profile $HOME
 
 # Install Sublime Text configuration files.
 cp Preferences.sublime-settings.user "$HOME/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings"
 cp Preferences.sublime-settings.default "$HOME/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings"
 
 # Install Git configuration.
-cp .gitconfig $HOME/
-cp .gitignore_global $HOME/
+cp .gitconfig $HOME
+cp .gitignore_global $HOME
 
 # Disable annoying window animations in Mac OS X.
 # You can undo these lines by changing YES to NO and vice versa.
@@ -57,4 +57,3 @@ defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool NO
 
 # Install a command line utility for moving files to the Trash folder.
 brew install trash
-
